@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Running a system 80+ teams chose | Mark Elamatha</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <a class="name" href="index.html">Mark Elamatha</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="operating-model.html" aria-current="page">Operating model</a></li>
+      <li><a href="theming.html">Theming</a></li>
+      <li><a href="ai-prototyping.html">AI prototyping</a></li>
+      <li><a href="leading.html">How I lead</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <header class="case-head">
+    <h1>Running a system 80+ teams chose</h1>
+    <p class="lead">With no mandate, the system only grew if teams trusted it. So I ran it like a product with customers who could leave: clear rules for what gets built, a way for anyone to contribute, steady releases, and real numbers on who was using it.</p>
+  </header>
+
+  <dl class="facts">
+    <div><dt>Role</dt><dd>Product owner</dd></div>
+    <div><dt>Team</dt><dd>7 to 10 developers, designers, QA and a digital architect</dd></div>
+    <div><dt>Years</dt><dd>Sep 2021 to Jul 2026</dd></div>
+    <div><dt>Reach</dt><dd>80+ product teams, 13 ministries</dd></div>
+  </dl>
+
+  <div class="col">
+    <p>I designed the processes on this page and ran them with the team. Developers on the team built the components and packages.</p>
+
+    <h2>Deciding what to build</h2>
+    <p>I designed a prioritization framework that scores each request on work type, reach, urgency, risk and size, with modifiers for the team asking. Scores fall into four priority bands, so partner teams could see why one request came before theirs.</p>
+    <p>I also set up four tiers of stakeholder communication: practitioners, adoption enablers, alignment partners and executives. Each tier got the updates it needed, and I reported monthly to the Deputy Minister of Technology and Innovation.</p>
+  </div>
+
+  <figure class="wide">
+    <div class="slot"><div><strong>Image to add: the prioritization framework</strong>The scoring sheet showing the criteria and the four priority bands.</div></div>
+  </figure>
+
+  <div class="col">
+    <h2>Letting teams contribute</h2>
+    <ul class="points">
+      <li>Work tagged as ready for contribution in the public GitHub backlog, with a contribution guide on design.alberta.ca and support from the core team.</li>
+      <li>A monthly recognition for top contributors. One developer outside the team made 9 contributions.</li>
+      <li>A shared bug triage model, built with a partner team, that scores each bug and sets clear ownership between the system team and the product team.</li>
+      <li>Twice-weekly drop-in hours, a structured bug form and a support channel.</li>
+    </ul>
+
+    <h2>Shipping versions and moving teams forward</h2>
+    <p>We shipped 68 production releases of the web component library from November 2022, about one every 20 days, alongside React, Angular and design token packages.</p>
+    <p>Before the major version update in April 2026, I ran an early adopter program with 7 teams across Justice, Child Care, Education and Housing. Their feedback reshaped the documentation and migration guidance before release. It also showed that page-by-page migration wasn't possible because of how tokens and styles were structured, so we changed the support plan before launch rather than after.</p>
+    <p>I wrote the migration strategy: three pathways for teams at different readiness levels, named accountabilities for each role, a decision flow and a tracking workbook. Launch was a four-week rollout that trained designers first, then developers.</p>
+  </div>
+
+  <figure class="wide">
+    <div class="slot"><div><strong>Image to add: the migration decision flow</strong>How a team chose its pathway: standard, late or no migration.</div></div>
+  </figure>
+
+  <div class="col">
+    <h2>Measuring adoption instead of guessing</h2>
+    <p>Leadership set a 60% migration target with no definition behind it. I defined which projects counted, using minimum package versions and recent activity, and renegotiated what the target measured. Then we put a scanner in place across the government's GitHub organization, so adoption was reported every month instead of estimated.</p>
+  </div>
+
+  <figure class="wide">
+    <svg class="funnel" viewBox="0 0 760 300" role="img" aria-labelledby="funnel-title funnel-desc">
+      <title id="funnel-title">57% of front-end projects chose the design system</title>
+      <desc id="funnel-desc">Repository scan, June 2026. 434 repositories scanned. 266 use a front-end framework. 152 use the design system, 57 percent of those. 102 were ready to migrate. 24 had moved to the new version within 12 weeks of launch.</desc>
+      <g font-family="Atkinson, system-ui, sans-serif" font-size="15">
+        <text x="0" y="40" fill="#17212b">Repositories scanned</text>
+        <rect x="240" y="22" width="460" height="28" rx="3" fill="#edf1f3"/>
+        <text x="708" y="41" fill="#17212b">434</text>
+
+        <text x="0" y="96" fill="#17212b">Use a front-end framework</text>
+        <rect x="240" y="78" width="282" height="28" rx="3" fill="#cdd5dc"/>
+        <text x="530" y="97" fill="#17212b">266</text>
+
+        <text x="0" y="152" fill="#17212b" font-weight="700">Use the design system</text>
+        <rect x="240" y="134" width="161" height="28" rx="3" fill="#1d6b53"/>
+        <text x="409" y="153" fill="#17212b" font-weight="700">152, or 57% of framework projects</text>
+
+        <text x="0" y="208" fill="#17212b">Ready to migrate</text>
+        <rect x="240" y="190" width="108" height="28" rx="3" fill="#d6e8e0"/>
+        <text x="356" y="209" fill="#17212b">102</text>
+
+        <text x="0" y="264" fill="#17212b">Moved to the new version</text>
+        <rect x="240" y="246" width="25" height="28" rx="3" fill="#d6e8e0"/>
+        <text x="273" y="265" fill="#17212b">24, within 12 weeks of launch</text>
+      </g>
+    </svg>
+    <figcaption>Repository scan, June 2026. Counts are code repositories, not teams. One team often owns several repositories.</figcaption>
+  </figure>
+
+  <div class="col">
+    <h2>What changed</h2>
+    <ul class="result-list">
+      <li><b>80+ product teams</b>Adopted the system across 13 ministries, without a mandate.</li>
+      <li><b>1M+ package downloads</b>Web component downloads grew every year, including the year of the major version update.</li>
+      <li><b>24% of eligible projects</b>Moved to the new version within three months, against a 60% target. Tracking by code stack showed which teams needed more help.</li>
+    </ul>
+  </div>
+
+  <nav class="next-case" aria-label="Next case study">
+    <p class="quiet">Next</p>
+    <p><a href="theming.html">Theming without forking</a></p>
+  </nav>
+</main>
+
+<footer class="site-foot">
+  <a href="mailto:melamatha@gmail.com">melamatha@gmail.com</a>
+  <a href="https://www.linkedin.com/in/markelamatha">LinkedIn</a>
+  <a href="https://github.com/Spark450">GitHub</a>
+</footer>
+</body>
+</html>

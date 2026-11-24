@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theming without forking | Mark Elamatha</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <a class="name" href="index.html">Mark Elamatha</a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="operating-model.html">Operating model</a></li>
+      <li><a href="theming.html" aria-current="page">Theming</a></li>
+      <li><a href="ai-prototyping.html">AI prototyping</a></li>
+      <li><a href="leading.html">How I lead</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <header class="case-head">
+    <h1>Theming without forking</h1>
+    <p class="lead">A minister-priority service needed a look that was very different from the standard Alberta style, on a fixed deadline. The easy answer was to copy the components and restyle them, which would have cut the service off from every future fix. Instead we added design tokens at the component level, so it could look different and still get every update.</p>
+  </header>
+
+  <dl class="facts">
+    <div><dt>Role</dt><dd>Product owner and architecture decisions</dd></div>
+    <div><dt>Partner</dt><dd>The Privacy Portal team</dd></div>
+    <div><dt>Deadline</dt><dd>29 November 2024</dd></div>
+    <div><dt>Result</dt><dd>Delivered early, no fork</dd></div>
+  </dl>
+
+  <div class="col">
+    <p>I set one rule for every decision: how does this help the whole system, not just this one team?</p>
+
+    <h2>Sorting every component</h2>
+    <p>We went through each component the portal needed and put it in one of five groups. The group decided how much the core system had to change.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Group</th><th scope="col">What it meant</th><th scope="col">Examples</th></tr></thead>
+        <tbody>
+          <tr><td>No change</td><td>Existing options were enough</td><td>Table</td></tr>
+          <tr><td>Style through tokens</td><td>New component-level tokens, no new code paths</td><td>Callout, accordion, container, button, side menu</td></tr>
+          <tr><td>New behaviour</td><td>A small feature added to the core component</td><td>Header menu button</td></tr>
+          <tr><td>New core component</td><td>Built for the portal, useful to everyone</td><td>Drawer</td></tr>
+          <tr><td>Experimental</td><td>Too different for the core, kept in a separate package with its own lifecycle</td><td>Form stepper</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <figure class="wide">
+    <div class="slot"><div><strong>Image to add: standard and portal components side by side</strong>Two or three components in the standard Alberta look next to the portal's approved look.</div></div>
+    <figcaption>Same components, same code. Only the component-level tokens change.</figcaption>
+  </figure>
+
+  <div class="col">
+    <h2>What changed</h2>
+    <ul class="result-list">
+      <li><b>Delivered early</b>It let the portal team ship more than originally planned.</li>
+      <li><b>No fork</b>The portal still runs on the core system and gets every fix.</li>
+      <li><b>A reusable pattern</b>Component-level tokens became the answer for any service that needs its own look.</li>
+    </ul>
+
+    <h2>The same approach for dark mode</h2>
+    <p>Several teams were building their own dark modes, for example for first responders who need less screen glare. Each one was a different take on the Alberta brand. I wrote the strategy for one shared version: an experimental theme first, a one to three month trial with structured feedback, then a review with the government's communications team before anything goes to production.</p>
+  </div>
+
+  <figure class="wide">
+    <div class="slot"><div><strong>Image to add: dark mode workspace</strong>A screen from the dark mode workspace demo.</div></div>
+  </figure>
+
+  <nav class="next-case" aria-label="Next case study">
+    <p class="quiet">Next</p>
+    <p><a href="ai-prototyping.html">Building on the system with AI tools</a></p>
+  </nav>
+</main>
+
+<footer class="site-foot">
+  <a href="mailto:melamatha@gmail.com">melamatha@gmail.com</a>
+  <a href="https://www.linkedin.com/in/markelamatha">LinkedIn</a>
+  <a href="https://github.com/Spark450">GitHub</a>
+</footer>
+</body>
+</html>

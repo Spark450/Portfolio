@@ -53,7 +53,20 @@
       <li>Each change gets its own preview link. Merging it updates the shared prototype.</li>
       <li>Snapshots keep a fixed version for research sessions.</li>
     </ol>
+
+    <h3>Skills that carry the standards</h3>
+    <p>Skills are written instructions that the AI tool reads when they're relevant to what a designer has asked. They come with every copy of the template, so designers don't set them up or call them by name. Teams can open them and edit them to suit how they work.</p>
     <p>I wrote the skill files for documentation, user stories, visual design and content design. Four more came from the design system's own AI tools, and I adapted one of them. They make the AI tools follow the same standards for every designer, the same job a design system does for components.</p>
+    <ul class="points">
+      <li><b>Documentation.</b> Each area of the prototype has a requirements doc, updated in the same pull request as the change so it never falls behind. Every point is marked as a decision, assumption, open question or prototype-only shortcut, with who decided and when. Old decisions are replaced, not deleted, so you can see what changed and why.</li>
+      <li><b>User stories.</b> Jira stories are drafted from the prototype and its requirements docs, with links to the preview and the doc. The team then refines them together as usual.</li>
+      <li><b>Content design.</b> Labels, messages, errors and guidance are written for the right reader: plain language for citizens, denser wording for workers.</li>
+      <li><b>Visual design.</b> Heading and text sizes, text colour and spacing stay consistent from screen to screen. Designers also use it when a screen looks off or feels cramped.</li>
+    </ul>
+    <p>The reasoning in the requirements docs has to come from the designer, their Miro boards and Confluence. A doc an AI tool writes just by reading the code describes the screens, but not why they're that way.</p>
+
+    <h3>Opening it up to other teams</h3>
+    <p>I wrote a get-started guide so designers across the Government of Alberta can use the method, not only my team. It covers getting access, starting a prototype from the template in React or Angular, the built-in skills, connecting Jira, Confluence, Miro and Figma, and how I work, such as one group of changes per pull request. Five more projects have started from the template so far.</p>
   </div>
 
   <figure class="wide">

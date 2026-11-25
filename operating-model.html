@@ -37,13 +37,49 @@
     <p>I designed the processes on this page and ran them with the team. Developers on the team built the components and packages.</p>
 
     <h2>Deciding what to build</h2>
-    <p>I designed a prioritization framework that scores each request on work type, reach, urgency, risk and size, with modifiers for the team asking. Scores fall into four priority bands, so partner teams could see why one request came before theirs.</p>
-    <p>I also set up four tiers of stakeholder communication: practitioners, adoption enablers, alignment partners and executives. Each tier got the updates it needed, and I reported monthly to the Deputy Minister of Technology and Innovation.</p>
+    <p>I designed a scoring rubric for every new issue in the backlog. Bugs, features and tech debt each had their own 0 to 3 scale for impact. Every issue was also scored 0 to 3 on reach, urgency and risk. Size adjusted the total, from +2 for tiny work to &minus;2 for very large work, and each extra team reporting the same issue added a point, up to +2.</p>
+    <p>The total put each issue in one of four bands. Partner teams could see why one request came before theirs, and small fixes didn't get stuck behind big ones.</p>
   </div>
 
   <figure class="wide">
-    <div class="slot"><div><strong>Image to add: the prioritization framework</strong>The scoring sheet showing the criteria and the four priority bands.</div></div>
+    <div class="score" role="group" aria-label="How an issue was scored">
+      <div class="score-terms">
+        <div class="term"><b>Impact</b><span>0 to 3</span><small>Scale depends on bug, feature or tech debt</small></div>
+        <div class="op" aria-hidden="true">+</div>
+        <div class="term"><b>Reach</b><span>0 to 3</span><small>How widely the component is used</small></div>
+        <div class="op" aria-hidden="true">+</div>
+        <div class="term"><b>Urgency</b><span>0 to 3</span><small>Is there a workaround?</small></div>
+        <div class="op" aria-hidden="true">+</div>
+        <div class="term"><b>Risk</b><span>0 to 3</span><small>Shared behaviour, accessibility, releases</small></div>
+        <div class="op" aria-hidden="true">+</div>
+        <div class="term"><b>Size</b><span>&minus;2 to +2</span><small>Smaller work scores higher</small></div>
+        <div class="op" aria-hidden="true">+</div>
+        <div class="term"><b>Teams</b><span>0 to +2</span><small>More teams reporting it</small></div>
+      </div>
+      <ol class="bands" aria-label="Priority bands">
+        <li class="b-urgent"><b>Urgent</b><span>10 or more</span></li>
+        <li class="b-high"><b>High</b><span>7 to 9</span></li>
+        <li class="b-medium"><b>Medium</b><span>4 to 6</span></li>
+        <li class="b-low"><b>Low</b><span>1 to 3</span></li>
+      </ol>
+    </div>
+    <figcaption>The backlog scoring rubric. Each issue's total sets its priority band.</figcaption>
   </figure>
+
+  <div class="col">
+    <p>For the updated design system, I wrote a communication plan for four groups of stakeholders. Each group got its own materials and channels, and I reported monthly to the Deputy Minister of Technology and Innovation.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Group</th><th scope="col">Who</th><th scope="col">What they got</th></tr></thead>
+        <tbody>
+          <tr><td>Core practitioners</td><td>Designers and developers</td><td>Figma kit, release notes, migration guides, office hours and demos</td></tr>
+          <tr><td>Adoption enablers</td><td>Product directors, product owners, scrum masters, architects</td><td>One-page briefs, early adopter case studies and adoption guidance</td></tr>
+          <tr><td>Alignment partners</td><td>Communications, accessibility and service standards teams</td><td>Design foundations, accessibility standards and showcase sessions</td></tr>
+          <tr><td>Executives</td><td>Minister, Deputy Minister and assistant deputy ministers</td><td>One-page briefs, quarterly updates and demos of working software</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <div class="col">
     <h2>Letting teams contribute</h2>

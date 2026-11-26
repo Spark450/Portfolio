@@ -26,7 +26,7 @@ Never include real names, case details, SINs or internal screenshots that aren't
 
 - Plain language, sentence case, Canadian spelling.
 - Every number must match the resume and the evidence Mark has supplied. Don't round up or invent metrics.
-- The MCP server was built by the design system team. Mark set its direction and wrote the skill files.
+- The MCP server was built by the design system team. Mark set its direction and wrote the skill files. On the site, present the MCP server and the system's skill files as team work. The coded prototype method is where Mark's own hands-on work starts.
 - WCAG 2.2 AA applies to the design system itself, not to the products that use it.
 - No em dashes, no all-caps labels, no arrows after links.
 
